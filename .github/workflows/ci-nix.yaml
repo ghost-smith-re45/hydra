@@ -45,7 +45,7 @@ jobs:
             os: ubuntu-24.04-arm
     steps:
     - name: 📥 Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: ❄ Setup Nix/Cachix
       uses: ./.github/actions/nix-cachix-setup
@@ -85,7 +85,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 📥 Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: ❄ Setup Nix/Cachix
       uses: ./.github/actions/nix-cachix-setup
@@ -113,7 +113,7 @@ jobs:
             options: 'datasets datasets/1-node.json datasets/3-nodes.json --output-directory $(pwd)/../benchmarks --timeout 1000s'
     steps:
     - name: 📥 Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: ❄ Setup Nix/Cachix
       uses: ./.github/actions/nix-cachix-setup
